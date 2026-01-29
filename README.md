@@ -26,3 +26,32 @@ A web application built with Laravel and Blade for managing mini bars in rooms. 
    ```bash
    git clone https://github.com/mohammadhussainshams7/Mini-Bar.git
    cd Mini-Bar
+2. Install PHP dependencies:
+     ```bash
+    composer install
+3. Install JavaScript dependencies:
+   ```bash
+    npm install
+    npm run dev
+4. Copy .env.example to .env and set your database credentials:
+   ```bash
+    cp .env.example .env
+    php artisan key:generate
+5. Run migrations:
+    ```bash
+    php artisan migrate
+6. Start the local development server:
+   ```bash
+    php artisan serve
+## Usage
+
+Visit http://localhost:8000 in your browser.
+
+Register a new account or log in.
+
+Manage products, categories, and inventory per room.
+
+Track the validity/expiration of items to ensure safe usage.
+
+
+   
